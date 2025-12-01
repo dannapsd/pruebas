@@ -1,2 +1,0 @@
-# pruebas
-cosas escuela
