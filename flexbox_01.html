@@ -1,0 +1,334 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>felxbox_01</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Museo de Louvre</a>
+          <a href="#secc2">Festival Open Frame</a>
+          <a href="#secc3">Autores y libros</a>
+          <a href="#secc4">Materiales audiovisuales</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Museo de Louvre</h1>
+		        <br>
+		        <br>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Museo del Louvre se encuentra alojado en el Palacio del Louvre, una fortaleza del siglo XII que fue ampliada y reformada en diversas ocasiones. Antes de que se convirtiera en museo, algunos monarcas como Carlos V y Felipe II utilizaron el palacio como residencia real en la que acumulaban sus colecciones artísticas.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Museo del Louvre abre su marco hacia el futuro con Open Frame, un festival que reúne a autores, filósofos, economistas y voces disruptivas para cuestionar las narrativas que gobiernan al mundo. Durante cuatro días, París se convierte en el centro global de la reflexión sobre historia, poder, control y libertad. </p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="imgs-secc-1">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.jpg" title="Img 1a">
+	        		
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio"> 
+    				<!--texto para imagen a la izquierda-->
+	        		<p> El Museo del Louvre está ubicado en París, la capital del país, en el antiguo palacio real del Louvre</p>
+	        	<!--texto para imagen a la derecha-->
+	        		
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        				<p>El Museo del Louvre está ubicado en París, la capital del país, en el antiguo palacio real del Louvre</p>
+	        	        	
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Festival Open Frame</h1>
+		        <br>
+		        <br>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Festival Open Frame es un encuentro internacional dedicado a explorar cómo se construyen las narrativas históricas, cómo opera el poder simbólico y cuál es el lugar de la libertad humana en la era contemporánea. A través de conferencias, proyecciones audiovisuales y presentaciones de autores clave, el festival abre un espacio para analizar lo que normalmente permanece fuera del marco.</p>
+		        <br>
+		        <h2>Fechas:</h2>
+		        <p>10–13 de octubre de 2025</p>
+		        <br>
+
+		        <h2>Lugar:</h2>
+		        <p>Exteriores del Museo del Louvre</p>
+		        <br>
+
+						<h2>La Experiencia Open Frame 2025</h2>
+						<br>
+						<p>Durante cuatro días, del 10 al 13 de octubre de 2025, Open Frame reúne a autores, analistas, pensadores disruptivos y obras esenciales que han dejado huella por su capacidad de revelar estructuras ocultas. Desde los universos distópicos de 1984 y Un Mundo Feliz, hasta las investigaciones de impacto global de Confesiones de un Sicario Económico, el festival crea un puente entre arte, crítica social y conciencia contemporánea.<p>
+						<br> 
+						<h2>Agenda del Festival</h2>
+						<p>Día 1: El origen de las narrativas</p>
+						<p>Día 2: Control mental y poder</p>
+						<p>Día 3: Economía global y manipulación</p>
+						<p>Día 4: Libertad futura y última generación libre</p>
+						<br>
+
+						<p>El público podrá sumergirse en conferencias, proyecciones cinematográficas, diálogos abiertos, experiencias inmersivas y espacios dedicados a explorar la libertad en una era dominada por el control informativo y tecnológico.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Open Frame no es solo un evento.
+						Es un llamado a la reflexión profunda, al pensamiento libre y a la búsqueda de la verdad sin límites.</p>
+						<br><!--etiqueta para un brinco de renglón-->
+						  <h1>Cartel del Festival</h1>
+		        <br>
+		        <br>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/Flyer festival.jpg" title="Flyer festival">
+        		<!--texto para la imagen-->
+        		<p></p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Autores y libros</h1>
+		        <br>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Open Frame reúne a autores que han desafiado sistemas, denunciado estructuras y revelado mecanismos invisibles de control. Desde distopías literarias hasta testimonios reales, cada conferencia abre una ventana necesaria en la conciencia contemporánea.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Cada autor presenta un libro clave que formará parte de los análisis y proyecciones del festival. Cada bloque incluye un botón hacia su trailer individual.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		<br>
+    				<h2>Autores</h2>
+    				<br>
+    				<br>
+    				<h2>Jorge Guerra — “La Nobleza Negra”</h2>
+						<p>Explora las élites ocultas que operan detrás de los conflictos globales. Su obra revela cómo el poder se disfraza de historia oficial.</p>
+    				<br>
+    				<h3>Libro:</h3> 
+    				<p>“La Nobleza Negra” profundiza en los grupos financieros y aristocráticos que han influido silenciosamente en decisiones globales durante siglos.</p>
+    				<br>
+    				<a href="https://youtu.be/aNydF7j_XJM?si=QT51xXAtU5nBI1ef" target="_blank">▶ Ver tráiler</a>
+    				<br>
+    				<br>
+    				<h2>Antony Sutton — “El poder financiero invisible”</h2>
+    				<p>Historiador y economista conocido por investigar las conexiones entre banca, tecnología y geopolítica en el siglo XX.</p>
+    				<h3>Libro:</h3> 
+    				<p>En esta obra “El poder financiero invisible”, Sutton muestra cómo las finanzas internacionales han financiado e influido en movimientos políticos y transformaciones globales.</p>
+    				<br>
+    				<a href="https://youtu.be/O367TPrQkv4?si=Ke3y9nndibdGLeWC" target="_blank">▶ Ver tráiler</a>
+    				<br>
+    				<br>
+    				<h2>Guillermo Mas Arellano — "El nuevo paradigma de la verdad"</h2>
+    				<p>Ensayista y crítico cultural; trabaja la intersección entre medios, símbolos y la construcción de consenso.</p>
+    				<h3>Libro:</h3> 
+    				<p>El nuevo paradigma de la verdad plantea cómo las narrativas contemporáneas (medios, redes y cultura) reformulan lo que consideramos cierto y posible.</p>
+    				<br>
+    				<a href="https://youtu.be/VfwKJkjcPvQ?si=Wv2VIUGlXxwp67BU" target="_blank">▶ Ver tráiler</a>
+    				<br>
+    				<br>
+    				<h2>Pável Dúrov — Conferencia: “Somos la última generación libre”</h2>
+    				<p>Fundador de Telegram y activista por la privacidad digital; su trabajo aborda la encriptación, libertad de comunicación y censura.</p>
+    				<h3>Sobre la conferencia:</h3> 
+    				<p>Dúrov reflexionará sobre los desafíos de la privacidad y la libertad en redes digitales, y por qué su generación podría ser la última con acceso real a comunicación libre.</p>
+    				<br>
+  
+    				<a href="https://youtu.be/8ilF7DQ2aIk?si=g-yoayIIJkFgaiAp" target="_blank">▶ Ver tráiler</a>
+    				<br>
+    				<br>
+</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/ponentes img.jpg" title="ponentes img">
+        		<!--texto para la imagen-->
+        		<p></p>
+    		</div>
+    		<br>
+    		<br>
+    				<h2>Libros</h2> 
+    				<br>
+    				<br>
+    				<h2>1984 – George Orwell</h2>
+    				<p>Vigilancia total, manipulación del lenguaje y desaparición de la verdad objetiva.</p>
+    				<br>
+						<a href="https://youtu.be/hAxEbRJF2Hw?si=2fOhzH1-oDl3yIAI" target="_blank">▶ Ver tráiler</a>
+    				<br>
+    				<h2>Un Mundo Feliz – Aldous Huxley</h2>
+    				<p>Control social mediante el confort, condicionamiento y la anestesia emocional.</p>
+    				<br>
+						<a href="https://youtu.be/q1SXLo2O5-Y?si=gUEL2lbwj6OVRuOQ" target="_blank">▶ Ver tráiler</a>
+    				<br>
+    				<h2>The Rape of the Mind – Joost Meerloo</h2>
+    				<p>Técnicas de lavado de cerebro, coerción psicológica y mecanismos para anular la voluntad.</p>
+    				<br>
+						<a href="https://youtu.be/GymmC6jHZpU?si=evDKF88cDGyEcRM0" target="_blank">▶ Ver tráiler</a>
+    				<br>
+    				<h2>Confesiones de un sicario económico – John Perkins</h2>
+    				<p>Relato testimonial sobre cómo la deuda y la diplomacia económica se han usado para subyugar naciones.</p>
+    				<br>
+						<a href="https://youtu.be/GymmC6jHZpU?si=ZSOM-uLF6_KsL0IH" target="_blank">▶ Ver tráiler</a>
+    				<br>
+    				<br>
+    				
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/Libros img.jpg" title="Libros img">
+        		<!--texto para la imagen-->
+        		<p></p>
+    		</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Materiales Audiovisuales</h1>
+		        <br>
+		        <h2>Proyecciones Críticas & Galería Multimedia</h2>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Proyecciones y documentales que abren debates centrales del festival. Cada proyección incluye su trailer y una sesión de debate posterior.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>A través de cine político, documentales investigativos y obras que desmantelan los mitos de la historia oficial, esta sección invita al espectador a observar sin filtros los mecanismos que moldean nuestra percepción del poder, la economía y la libertad humana.
+						Cada pieza ha sido seleccionada por su capacidad para provocar preguntas profundas, generar debate y ampliar el marco interpretativo del espectador. Las proyecciones se acompañan de trailers exclusivos, debates posteriores y contenido complementario que facilita una experiencia completa: desde la interpretación visual hasta el análisis conceptual.</p>
+		        <br>
+		        <br>
+		        <h2>Proyecciones programadas</h2><!--etiqueta para un brinco de renglón-->
+		        <br>
+		        <h2>Land of the Blind (2006)</h2>
+		        <p>Drama político sobre poder y sustitución del liderazgo; alegoría sobre la perpetuación del control.</p>
+		        <br>
+						<a href="https://youtu.be/iER0EwhLD2U?si=bykBVL70cPVqmOvc" target="_blank">▶ Ver tráiler</a>
+		        <br>
+		        <h2>Zeitgeist: The Movie</h2>
+		        <p>Ensayo documental que cuestiona narrativas económicas, religiosas y mediáticas; pieza polarizadora y detonante de debates.</p>
+		         <br>
+						<a href="https://youtu.be/CWfUfGHN1Ro?si=19cRNdX-bq5_kocx" target="_blank">▶ Ver tráiler</a>
+		        <br>
+		        <h2>The Money Masters (1996)</h2>
+		        <p>Historia crítica sobre la evolución y la influencia de los bancos centrales y el poder financiero global.</p>
+		        <br>
+						<a href="https://youtu.be/F6OWPyGWRbU?si=36VRdySoFm7xiy0M" target="_blank">▶ Ver tráiler</a>
+		        <br>
+    		</div>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/audiovisual img.jpg" title="audiovisual img">
+        		<!--texto para la imagen-->
+        		<br>
+        		<br>
+				</div>
+    		</div>
+
+    		<h1>Exteriores del Museo de Louvre</h1>
+    		<br>
+    		<br>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<iframe  width="1280px" height="720px" src="https://momento360.com/e/u/1d87577775ec41419f43d3d34c428cf0?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=100&size=medium&display-plan=true"></iframe>
+        		<!--texto para la imagen-->
+        		<p>Vista 360 del museo<p>
+    		</div>
+
+    	</div>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
